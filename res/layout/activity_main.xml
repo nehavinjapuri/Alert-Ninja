@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+
+
+    tools:context="MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <Button
+        android:id="@+id/btnSendSMS4"
+        android:layout_width="150dp"
+        android:layout_height="112dp"
+        android:layout_above="@+id/imageButton"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="101dp"
+        android:backgroundTint="#FF5757"
+        android:textColor="#FFFFFF"
+        android:text="ALARM"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendSMS5" />
+
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:id="@+id/btnSendSMS5"
+        android:layout_width="150dp"
+        android:layout_height="104dp"
+        android:layout_above="@+id/imageButton"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="39dp"
+        android:backgroundTint="#FF5757"
+        android:text="Parents"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSendSMS4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendSMS" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="22dp"
+        android:text="ALERT NINJA"
+        android:textColor="#24E1BF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSendSMS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="154dp"
+        android:layout_height="109dp"
+        android:layout_above="@+id/imageButton"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF5757"
+        android:textColor="#FFFFFF"
+        android:text="Police"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSendSMS5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+</android.support.constraint.ConstraintLayout>
